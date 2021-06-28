@@ -1,0 +1,589 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* GENERAL STYLES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 8rem;
+    color: #EB28C9;
+    padding: 1rem;
+}
+
+h2 {
+    color: #ffde16;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* h2:hover, h2:focus {
+    color: #EB28C9;
+    cursor: pointer;
+} */
+
+
+
+p {
+    color: rgb(240, 243, 213);
+    font-size: 2.25rem;
+    line-height: 2.9rem;
+    text-align: justify;
+    padding: 2.5rem;
+    width: 85%;
+}
+
+/* ABOUT */
+
+.quote p {
+    text-align: center;
+    font-style: italic;
+    font-size: 2.25rem;
+    color: #ffde16;
+}
+
+.p1 {
+    padding-bottom: 15rem;
+}
+
+i {
+    padding: 0 2rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+/* HEADER STYLES */
+
+header {
+    height: 100vh;
+    padding-bottom: 15rem;
+}
+
+/* NAV STYLES */
+
+nav {
+    background: #ffde16;
+    border-bottom: 10px solid #37A3D2;
+}
+
+.nav {
+    display: flex;
+    padding: 1.5rem;
+    list-style-type: none;
+    animation: fadeIn2 ease 1.4s;
+}
+
+.nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.nav li a:hover {
+    cursor: pointer;
+    color: #EB28C9;
+    /* border: 1px solid #4a9a55; */
+}
+
+/* LOGO STYLES */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.logo img {
+    width: 52%;
+    animation: spin linear 0.5s;
+    padding-top: 2.5rem;
+    /* filter: drop-shadow(1px  1px 5px rgb(237, 237, 115)); */
+}
+
+.logoWords {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 300px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 500px;
+}
+
+.logoWords img {
+    width: 100%;
+    animation: fadeIn ease 0.8s;
+}
+
+.carbsContainer {
+    width: 200px;
+    position: absolute;
+    top: 650px;
+    left: 0;
+    right: -330px;
+}
+
+.carbsContainer img {
+    width: 100%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.fade {
+    animation: fadeIn ease-in-out 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* ABOUT */
+
+.peekaboo {
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+.peekaboo1 {
+    background-image: url(./assets/uncooked-pizza2-background.jpg);
+}
+
+.peekaboo2 {
+    background-image: url(./assets/veggies-background.jpg);
+}
+
+.peekaboo3 {
+    background-image: url(./assets/uncooked-pizza2-background.jpg);
+}
+
+.peekaboo4 {
+    background-image: url(./assets/veggies-background.jpg);
+}
+
+.about {
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+.aboutSection {
+    position: relative;
+}
+
+.mushroom {
+    width: 150px;
+    position: absolute;
+    animation: rotation 5s infinite linear;
+}
+
+.mushroom img {
+    width: 100%;
+}
+
+.mushroom1 {
+    top: -300px;
+}
+
+.mushroom2 {
+    top: -100px;
+    right: -60px;
+    transform: rotate(-125deg);
+}
+
+.mushroom3 {
+    top: 200px;
+    left: -100px;
+    transform: rotate(-260deg);
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15rem;
+}
+
+.quote {
+    padding: 20rem 0;
+}
+
+.quote p {
+    font-size: 3rem;
+}
+
+/* MENU */
+
+.menu {
+    padding-top: 20rem;
+    padding-bottom: 30rem;
+    background-image: url("./assets/rolling-pin-background.jpg");
+    background-size: cover;
+}
+
+.menuContainer a {
+    text-align: center;
+    background: #ffde16;
+    color: black;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.menuContainer a:hover, .menuContainer a:focus {
+    color: #37A3D2;
+}
+
+.pizzaTypes ul {
+    text-align: center;
+    color: #ffde16;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.5rem;
+}
+
+.pizzaTypes ul li {
+    list-style-type: none;
+}
+
+.pizzaTypes li:nth-child(4) {
+    padding-bottom: 5rem;
+}
+
+/* NUTRITIONAL INFO */
+
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+.nutritional {
+    padding-top: 15rem;
+}
+
+.infoContainer p {
+    padding-bottom: 10rem;
+}
+
+.infoContainer a {
+    text-align: center;
+    background: #ffde16;
+    color: black;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.infoContainer a:hover, .infoContainer a:focus {
+    color: #37A3D2;
+}
+
+/* GALLERY */
+
+.gallery {
+    padding-top: 30rem;
+    position: relative;
+}
+
+:root {
+    --slider-width: 100%;
+    --slide-count: 5;
+}
+
+.container {
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.slider-container {
+    width: 100%;
+    height: 320px;
+    margin-left: -5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.slider .first {
+    background-image: url('./assets/gallery/1.jpg');
+}
+
+.slider .second {
+    background-image: url('./assets/gallery/2.jpg');
+}
+
+.slider .third {
+    background-image: url('./assets/gallery/3.jpg');
+}
+
+.slider .forth {
+    background-image: url('./assets/gallery/4.jpg');
+}
+
+.slider .fifth {
+    background-image: url('./assets/gallery/5.jpg');
+}
+
+.slider .sixth {
+    background-image: url('./assets/gallery/6.jpg');
+}
+
+.slider .seventh {
+    background-image: url('./assets/gallery/7.jpg');
+}
+
+.slider .eigth {
+    background-image: url('./assets/gallery/8.jpg');
+}
+
+.slider .ninth {
+    background-image: url('./assets/gallery/9.jpg');
+}
+
+.slider-container .slider.move .slide {
+    background-position: 10% 50%;
+}
+
+.slider-container .slider {
+    position: relative;
+    height: 450px;
+    width: calc(var(--slider-width) * var(--slide-count));
+    transition: transform 1.5s;
+}
+
+.slider-container .slider .slide {
+    width: 8%;
+    height: 300px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 3px;
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 2s;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 43%;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+    background: #ffde16;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    z-index: 20;
+}
+
+.prev {
+    left: -5%;
+}
+
+.next {
+    left: 100%;
+}
+
+.next:hover, .prev:hover {
+    color: #37A3D2;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 20rem 0;
+    background-image: url("./assets/top-view-background.jpg");
+    background-size: center;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactTitle {
+    margin-bottom: 2rem;
+    color: #ffde16;
+}
+
+.contactInfo p {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    line-height: 5rem;
+}
+
+.contactInfo a {
+    width: 100%;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #ffde16;
+}
+
+.contactInfo a:hover, .contactInfo a:focus {
+    color: #37A3D2;
+}
+
+.social {
+    display: flex;
+    color: #ffde16;
+    padding-top: 2rem;
+}
+
+.social a i {
+    font-size: 4rem;
+}
+
+.social a i:hover {
+    color: #37A3D2;
+}
+
+
+
+
+
+
+
+/* NUTRITIONAL INFO PAGE */
+
+.nutritionalHeader {
+    height: 70vh; 
+
+    background-image: linear-gradient(to bottom, rgba(46, 49, 49, 0.65), rgba(0,0,0)), url(./assets/uncooked-pizza2-background.jpg);
+    background-size: cover;
+    background-position: center;;
+}
+
+.infoTitleContainer,
+.menuTitleContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 65vh;
+}
+
+.nutritionalContainer h2,
+.cookContainer h2 {
+    font-size: 3.5rem;
+}
+
+.nutritionalContainer {
+    padding: 10rem 0;
+}
+
+/* MENU PAGE */
+.menuHeader {
+    height: 70vh; 
+
+    background-image: linear-gradient(to bottom, rgba(46, 49, 49, 0.45), rgba(0,0,0)), url(./assets/gallery/1.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.cookContainer {
+    padding-bottom: 10rem;
+}
