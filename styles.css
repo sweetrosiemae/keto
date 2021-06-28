@@ -584,6 +584,12 @@ nav {
     padding-bottom: 5rem;
 }
 
+.chartContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .chart {
     width: 400px;
 }
