@@ -541,6 +541,14 @@ nav {
     color: #37A3D2;
 }
 
+.based {
+    padding-top: 5rem;
+}
+
+.based p {
+    line-height: 3rem;
+}
+
 
 
 
@@ -573,6 +581,21 @@ nav {
 
 .nutritionalContainer {
     padding: 10rem 0;
+    padding-bottom: 5rem;
+}
+
+.chart {
+    width: 400px;
+}
+
+.chart img {
+    width: 100%;
+}
+
+.chartInfo {
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 1.75rem;
 }
 
 /* MENU PAGE */
