@@ -225,7 +225,7 @@ nav {
 }
 
 .peekaboo1 {
-    background-image: url(./assets/uncooked-pizza2-background.jpg);
+    background-image: url(./assets/cooked-pizza-background.gif);
 }
 
 .peekaboo2 {
@@ -237,7 +237,7 @@ nav {
 }
 
 .peekaboo4 {
-    background-image: url(./assets/veggies-background.jpg);
+    background-image: url(./assets/cooked-pizza-background.gif);
 }
 
 .about {
@@ -542,7 +542,7 @@ nav {
 }
 
 .based {
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 .based p {
