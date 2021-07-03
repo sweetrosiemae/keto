@@ -87,14 +87,14 @@ nav {
     border-bottom: 10px solid #37A3D2;
 }
 
-.nav {
+.mainMenu {
     display: flex;
     padding: 1.5rem;
     list-style-type: none;
     animation: fadeIn2 ease 1.4s;
 }
 
-.nav li a {
+.mainMenu li a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
@@ -104,10 +104,41 @@ nav {
     padding: 1.5rem;
 }
 
-.nav li a:hover {
+.mainMenu li a:hover {
     cursor: pointer;
     color: #EB28C9;
 }
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu, 
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu i:hover,
+nav .openMenu i:hover {
+    color: #EB28C9;
+}
+
+.icons i {
+    color: black;
+    font-size: 3rem;
+}
+
+.icons i:hover {
+    color: #EB28C9;
+    font-size: 3rem;
+}
+
+
 
 /* LOGO STYLES */
 
@@ -613,6 +644,9 @@ nav {
 }
 
 
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1130px ) {
@@ -765,6 +799,54 @@ nav {
     .infoTitleContainer {
         height: 50vh;
     }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffde16;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: black;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav i {
+        display: inline-block;
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    ul li {
+        padding: 3rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    .contactClosed {
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 700px) {
@@ -924,3 +1006,4 @@ nav {
     }
 
 }
+
