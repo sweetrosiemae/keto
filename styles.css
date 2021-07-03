@@ -1091,6 +1091,14 @@ nav .openMenu i:hover {
         pointer-events: auto !important;
     }
 
+    .peekaboo {
+
+        background-repeat: no-repeat;
+        background-attachment: unset;
+        background-position-x: center;
+    }
+    
+
     p {
         text-align: left;
     }
