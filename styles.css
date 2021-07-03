@@ -1092,11 +1092,31 @@ nav .openMenu i:hover {
     }
 
     .peekaboo {
-
         background-repeat: no-repeat;
         background-attachment: unset;
         background-position-x: center;
     }
+
+    .peekaboo1 {
+        background-image: url(./assets/sauce-and-cheese-small.png);
+    }
+    
+    .peekaboo2 {
+        background-image: url(./assets/veggies-background.jpg);
+    }
+    
+    .peekaboo3 {
+        background-image: url(./assets/mis-en-place2-background.jpg);
+    }
+    
+    .peekaboo4 {
+        background-image: url(./assets/cooked-pizza2.jpg);
+    }
+    
+    .peekabooGIF {
+        background-image: url(./assets/cooked-pizza-background.gif)
+    }
+    
     
 
     p {
