@@ -142,11 +142,16 @@ nav .openMenu i:hover {
 
 /* LOGO STYLES */
 
+.logoContainer {
+    height: 100vh;
+}
+
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    padding-bottom: 3rem;
 }
 
 .logo img {
