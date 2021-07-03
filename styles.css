@@ -111,9 +111,9 @@ nav {
 
 nav .openMenu {
     font-size: 2rem;
-    margin: 20px;
     display: none;
     cursor: pointer;
+    padding-bottom: 1rem;
 }
 
 nav .closeMenu, 
