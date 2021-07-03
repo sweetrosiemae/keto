@@ -427,7 +427,7 @@ nav .openMenu i:hover {
 .peekaboo {
     height: 60vh;
     width: 100vw;
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
