@@ -91,6 +91,10 @@ nav {
     display: flex;
     padding: 1.5rem;
     list-style-type: none;
+    -webkit-animation: fadeIn2 ease 1.4s;
+    -moz-animation: fadeIn2 ease 1.4s;
+    -ms-animation: fadeIn2 ease 1.4s;
+    -o-animation: fadeIn2 ease 1.4s;
     animation: fadeIn2 ease 1.4s;
 }
 
@@ -156,6 +160,10 @@ nav .openMenu i:hover {
 
 .logo img {
     width: 52%;
+    -webkit-animation: spin linear 0.5s;
+    -moz-animation: spin linear 0.5s;
+    -ms-animation: spin linear 0.5s;
+    -o-animation: spin linear 0.5s;
     animation: spin linear 0.5s;
     padding-top: 2.5rem;
 }
@@ -176,6 +184,10 @@ nav .openMenu i:hover {
 
 .logoWords img {
     width: 100%;
+    -webkit-animation: fadeIn ease 0.8s;
+    -moz-animation: fadeIn ease 0.8s;
+    -ms-animation: fadeIn ease 0.8s;
+    -o-animation: fadeIn ease 0.8s;
     animation: fadeIn ease 0.8s;
 }
 
@@ -196,7 +208,68 @@ nav .openMenu i:hover {
 }
 
 .fade {
+    -webkit-animation: fadeIn ease-in-out 2s;
+    -moz-animation: fadeIn ease-in-out 2s;
+    -ms-animation: fadeIn ease-in-out 2s;
+    -o-animation: fadeIn ease-in-out 2s;
     animation: fadeIn ease-in-out 2s;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
@@ -210,6 +283,54 @@ nav .openMenu i:hover {
         opacity: 0;
     }
     90% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -232,7 +353,67 @@ nav .openMenu i:hover {
     }
 }
 
+@-webkit-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
 @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@-ms-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes rotation {
     from {
         transform: rotate(0deg);
     }
@@ -285,6 +466,10 @@ nav .openMenu i:hover {
 .mushroom {
     width: 150px;
     position: absolute;
+    -webkit-animation: rotation 5s infinite linear;
+    -moz-animation: rotation 5s infinite linear;
+    -ms-animation: rotation 5s infinite linear;
+    -o-animation: rotation 5s infinite linear;
     animation: rotation 5s infinite linear;
 }
 
