@@ -1102,19 +1102,20 @@ nav .openMenu i:hover {
     }
     
     .peekaboo2 {
-        background-image: url(./assets/veggies-background.jpg);
+        background-image: url(./assets/veggies-background-small.png);
     }
     
     .peekaboo3 {
-        background-image: url(./assets/mis-en-place2-background.jpg);
+        background-image: url(./assets/mis-en-place2-background-small.png);
     }
     
     .peekaboo4 {
-        background-image: url(./assets/cooked-pizza2.jpg);
+        background-image: url(./assets/cooked-pizza2-small.png);
     }
     
     .peekabooGIF {
-        background-image: url(./assets/cooked-pizza-background.gif)
+        background-image: url(./assets/footer-2.png);
+        height: 50vh;
     }
     
     
